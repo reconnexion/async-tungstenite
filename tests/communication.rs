@@ -2,9 +2,9 @@
 
 use async_std::net::{TcpListener, TcpStream};
 use async_std::task;
-use ng_async_tungstenite::{accept_async, client_async, WebSocketStream};
 use futures::prelude::*;
 use log::*;
+use ng_async_tungstenite::{accept_async, client_async, WebSocketStream};
 use ng_tungstenite::Message;
 
 async fn run_connection<S>(
